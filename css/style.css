@@ -936,6 +936,20 @@ img{
 	border-radius: 20px;
 	transition: all 0.3s;
   }
+  .image-container {
+    overflow: hidden;
+    position: relative;
+    width:100%;
+    
+}
+
+.image-container::after {
+    padding-top: 56.25%;
+    display: block;
+    
+}
+
+
   @media screen and (max-width: 768px) {
 	.blog-slider__img {
 	  transform: translateY(-50%);
