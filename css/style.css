@@ -362,7 +362,7 @@ img{
     gap: 1.75rem;
     padding-left: 0;
     margin-left: var(--mb-1);
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -401,7 +401,8 @@ img{
     width: 600px;
     align-content: center;
     text-align: center;
-    transform: translateX(-4rem);
+    transform: translateX(-2rem);
+    /*transform: translateX(-2.5rem);*/
 }
 
 .home__welcome{
@@ -474,10 +475,12 @@ img{
 
 .home__scroll{
     display: flex;
-    justify-content: center;
-    margin-top: 0;
+   
+    padding-top: 1rem;
+    margin-top: 7rem;
     animation: scrollDown 3s infinite;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .home__scroll-button{
@@ -491,7 +494,7 @@ img{
 
 .home__scroll-mouse{
     font-size: var(--big-font-size);
-    margin-top: var(--mb-3);
+    
 }
 
 .home__scroll-name{
@@ -1071,7 +1074,7 @@ img{
   /* ===================== CONTACT SECTION ================== */
 
   .contact_mail{
-    margin-left: var(--mb-3);
+    margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
     width: 90%;
   }
@@ -1313,13 +1316,15 @@ img{
 
     /* ===================== MEDIA QUERIES ================== */
 
-  /* Small Screen */
+  /* Small Screen Devices mobile*/
   @media screen and (max-width: 350px){
     .container{
       margin-left: var(--mb-0-25);
       margin-right: var(--mb-1);
     }
-
+    .home__data{
+      transform: translateX(-10%) !important;
+    }
     .nav__menu{
       padding: 2rem 0.25rem 4rem;
     }
@@ -1350,7 +1355,7 @@ img{
     .contact_mail{
       margin-left: var(--mb-1-5);
     }
-
+   
     ::-webkit-scrollbar{
       width: 0.4rem;
       border-radius: 0.4rem;
@@ -1362,7 +1367,7 @@ img{
     }
   }
 
-  /* Medium size Screen devices */
+  /* Medium size Screen devices: Tablet */
   @media screen and (min-width: 568px){
       .home__content{
         grid-template-columns: max-content 1fr;
@@ -1382,7 +1387,9 @@ img{
         grid-template-columns: repeat(1, 1fr);
         padding-left: var(--mb-1);
         padding-right: var(--mb-1);
+        
       }
+     
 
       /* .qualification__sections{
         display: grid;
@@ -1467,7 +1474,8 @@ img{
     }
     
     .home__scroll-button{
-      margin-left: 3rem;
+      
+      align-items: center;
     }
 
     .about{
@@ -1523,7 +1531,7 @@ img{
     } */
   }
 
-  /* Larger size Screen devices */
+  /* Larger size Screen devices Desktop and laptops*/
   @media screen and (min-width: 1024px){
       .header,
       .main,
